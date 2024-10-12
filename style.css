@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-container{
+    width: 100%;
+    max-width: 1200px;
+    padding-block: 1rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+.logo{
+    width: 150px;
+}
+
+.nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.nav-list li{
+    list-style-type: none;
+}
+
+.nav-list li a{
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-list li a:hover{
+    background-color: #D14D72;
+    color: white;
+}
+
+main{
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#content{
+    float: left;
+    width: 70%;
+}
+
+#content p{
+    text-align: justify;
+}
+
+.content-image{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.card{
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+    object-position: center;
+    align-self: flex-start;
+
+    box-shadow: 0 4px 8px 0 #FCC8D1 ;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.card h2{
+    text-align: center;
+}
+
+.card img{
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.jean section p{
+    text-align: center;
+}
+
+.social-media ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+    font-size: 1.5rem;
+}
+
+.social-media li{
+    list-style-type: none;
+}
+
+.social-media li a{
+    text-decoration: none;
+    color: #D14D72;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.social-media li a:hover{
+    color: #FCC8D1;
+}
+
+footer p{
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/*Medium devices (768px dan di bawahnya)*/
+@media screen and (max-width: 768px){
+    .navbar-container{
+        flex-direction: column;
+    }
+
+    .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: 0.5rem;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+        margin: auto;
+    }
+
+    
+}
+
